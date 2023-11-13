@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Preahvihear&family=Roboto&display=swap');
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+button{
+  cursor: pointer;
+}
+.navigation-body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 72px;
+  gap: 340px;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button{
+  outline: none;
+  background: var(--red);
+  color: white;
+  border: none;
+  padding:  5px 10px; 
+}
+
+.hero-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  min-width: 625px;
+  margin-top: auto;
+  margin-left: 70px ;
+  margin-top: 50px;
+}
+
+.hero-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+.hero-content .heading p {
+ font-weight: 800; 
+font-size: 100px;
+line-height: 102px;
+}
+
+.hero-content .para p {
+  font-weight: 600; 
+ font-size: 16px;
+ line-height: 24px;
+ color: var(--gray);
+ }
+
+ .hero-content .buttons .shop{
+  outline: none;
+  background: var(--red);
   color: white;
+  border: none;
+  padding:  5px 10px; 
+  font-weight: 600;
+  size: 24px  ;
+}
+.hero-content .buttons .cat{
+  outline: none;
+  background:transparent;
+  color: var(--gray);
+  border: solid black 1px;
+  padding:  5px 10px; 
+  font-weight: 600;
+  size: 24px  ;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-content .buttons {
+  display: flex;
+  gap: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-content .sentence p{
+  font-weight: 400;
+  font-size: 16px; 
+  color: var(--gray);
+  line-height: 19px;
+}
+
+.hero-content .small-logo {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
 }
